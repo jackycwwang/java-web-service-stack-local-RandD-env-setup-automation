@@ -41,8 +41,10 @@ CD into `vagrant/auto` directory and execute `vagrant up`. A successful executio
 ## Validation
 
 Run `http://web01` or `http://192.168.56.11` in the browser and login with the following credentials:
-username: `admin_vp`
-password: `admin_vp`
+
+> username: `admin_vp`
+> 
+> password: `admin_vp`
 
 
 The same homepage as the manual provisioning section should be displayed.
