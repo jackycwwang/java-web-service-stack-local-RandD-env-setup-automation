@@ -6,13 +6,17 @@ This section describes the automated provisioning process.
 
 The automated provisioning is done by adding each of the following lines to each VM defined in the Vagrantfile.
 
-```vagrant
-db01.vm.provision "shell", path: "mysql.sh"
-mc01.vm.provision "shell", path: "memcached.sh"
-rmq01.vm.provision "shell", path: "rabbitmq.sh"
-app01.vm.provision "shell", path: "tomcat.sh"
-web01.vm.provision "shell", path: "nginx.sh"
-```
+
+> db01.vm.provision "shell", path: "mysql.sh"
+>
+> mc01.vm.provision "shell", path: "memcached.sh"
+>
+> rmq01.vm.provision "shell", path: "rabbitmq.sh"
+>
+> app01.vm.provision "shell", path: "tomcat.sh"
+> 
+> web01.vm.provision "shell", path: "nginx.sh"
+
 
 The `path:` parameter above specifies the path to the provisioning script. Please refer to the following links for more information on each script:
 
@@ -43,7 +47,7 @@ CD into `vagrant/auto` directory and execute `vagrant up`. A successful executio
 Run `http://web01` or `http://192.168.56.11` in the browser and login with the following credentials:
 
 > username: `admin_vp`
-> 
+>
 > password: `admin_vp`
 
 
