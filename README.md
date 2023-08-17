@@ -1,7 +1,7 @@
 # Java Web Service Stack Local R&D Environment Manual and Auto Setup
 
 ## Introduction
-In this project, a R&D application stack to serve Java web application was set up locally either manually or automated. We used vagrant to achieve this setup.
+This project focuses on establishing a research and development (R&D) application stack for serving Java web applications, allowing for both manual and automated setups. Vagrant is utilized to facilitate this configuration.
 
 For setup details, explore the following directories:
 
