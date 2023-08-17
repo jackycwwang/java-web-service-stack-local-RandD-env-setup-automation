@@ -32,7 +32,7 @@ Please refer the following diagram for the servers that is included in this proj
 
 ![Architecture Stack](images/architecture-stack.png)
 
-The Java application is a simple login website deployed on Tomcat. The user and password are stored in MySQL database for authentication and will be stored in a memcache caching service for fast next time retrieving.
+The Java application is a simple login website deployed on Tomcat. The user and password are stored in MySQL database for authentication and will be stored in a memcache caching service for fast next time retrieving. The Java web application source code structure is located in [src](src) directory
 ## Manual Provisioning
 Please refer to [README.md](vagrant/manual/README.md) for detailed steps.
 
