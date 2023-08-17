@@ -1,1 +1,1 @@
-# Java Web Service Stack Local R&D Environment Setup Automation
+# Java Web Service Stack Local R&D Environment Manual and Auto Setup
