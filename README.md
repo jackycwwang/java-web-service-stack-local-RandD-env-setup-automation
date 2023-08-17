@@ -49,3 +49,5 @@ Please refer to [README.md](vagrant/manual/README.md) for detailed steps.
 ## Automated Provisioning
 Please refer to [README.md](vagrant/auto/README.md) for detailed info.
 
+
+<sub>The photos and source code are taken from &copy; HKH Infotech.</sub>

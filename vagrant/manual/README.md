@@ -2,7 +2,7 @@
 
 ## Before provisioning
 
-Note: For Windows users, disable the following Windows features to prevent any potential interference: Hyper-V, Virtual Machine Platform, Windows Hypervisor Platform, and Windows Subsystem for Linux. And after disabling the features, restart the computer.
+Note: This setup is only for Windows users, disable the following Windows features to prevent any potential interference: Hyper-V, Virtual Machine Platform, Windows Hypervisor Platform, and Windows Subsystem for Linux. And after disabling the features, restart the computer.
 
 We will perform validation on the running virtual machines (VMs). Following that, we will proceed with provisioning the VMs. Once the provisioning process is complete, we will carry out validation on the services.
 
@@ -342,4 +342,3 @@ Enter username `admin_vp` and password `admin_vp` (one of credentials in MySQL) 
 
 
 
-<sub>The photos and source code are taken from &copy; HKH Infotech.</sub>
