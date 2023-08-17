@@ -42,7 +42,7 @@ Run the following commands in order in Git Bash:
 
 
 
-**1. Install MySQL**
+**a. Install MySQL**
 
 ```bash
 vagrant ssh db01
@@ -59,7 +59,7 @@ systemctl start mariadb
 systemctl enable mariadb
 ```
 
-**2. Configure MySQL**
+**b. Configure MySQL**
 
 ```bash
 mysql_secure_installation
@@ -83,7 +83,7 @@ Reload privilege tables now? [Y/n] y
 
 ```
 
-**3. Create database and user**
+**c. Create database and user**
 
 ```bash
 mysql -u root -padminpass  # -p and password without any space in between
@@ -97,7 +97,7 @@ mysql> show databases;
 mysql> exit;
 ```
 
-**4. Populate the database**
+**d. Populate the database**
 
 ```bash
 git clone -b main https://github.com/jackycwwang/java-web-service-stack-local-RandD-env-setup-automation.git
@@ -179,7 +179,7 @@ Done!
 
 ## 4. Tomcat
 
-**1. Install Dependencies and Tomcat**
+**a. Install Dependencies and Tomcat**
 
 ```bash
 vagrant ssh app01
@@ -209,7 +209,7 @@ chown -R tomcat.tomcat /usr/local/tomcat
 ls -l /usr/local/tomcat
 ```
 
-**2. Configure Tomcat to enable systemctl control**
+**b. Configure Tomcat to enable systemctl control**
 
 Create a file called `tomcat.service` in `/etc/systemd/system/` directory.
 
@@ -248,7 +248,7 @@ systemctl enable tomcat
 systemctl status tomcat
 ```
 
-3. Code build and deploy
+**c. Code build and deploy**
 
 ```bash
 git clone https://github.com/jackycwwang/java-web-service-stack-local-RandD-env-setup-automation.git
@@ -275,7 +275,7 @@ Done!
 
 ## 5. Nginx
 
-1. Install Nginx
+**a. Install Nginx**
 
 ```bash
 vagrant ssh web01
@@ -288,7 +288,7 @@ apt install nginx -y
 
 ```
 
-2. Configure Nginx
+**b. Configure Nginx**
 
 Create a file called `vprofile` in `/etc/nginx/sites-available/` directory.
 
@@ -321,7 +321,7 @@ ln -s /etc/nginx/sites-available/vprofile /etc/nginx/sites-enabled/vprofile
 ls -l /etc/nginx/sites-enabled
 ```
 
-Restart Nginx.
+**c. Restart Nginx**
 
 ```bash
 systemctl restart nginx
