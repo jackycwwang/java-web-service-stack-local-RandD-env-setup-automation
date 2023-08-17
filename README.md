@@ -3,10 +3,12 @@
 ## Introduction
 In this project, a R&D application stack to serve Java web application was set up locally either manually or automated. We used vagrant to achieve this setup.
 
+For setup details, explore the following directories:
+
 - The directory for manually set up: [Manual setup](vagrant/manual)
 - The directory for automated set up: [Automated setup](vagrant/auto)
 
-The content is divided into a few sections:
+The content is organized into the following sections:
 
 - [Java Web Service Stack Local R\&D Environment Manual and Auto Setup](#java-web-service-stack-local-rd-environment-manual-and-auto-setup)
   - [Introduction](#introduction)
@@ -16,6 +18,9 @@ The content is divided into a few sections:
   - [Automated Provisioning](#automated-provisioning)
 
 ## Prerequisite
+
+To proceed, ensure you have the following tools and resources available:
+
 - Oracle VM Virtualbox (version: 7.0.8 r156879)
 - Vagrant (version: 2.3.7)
 - Vagrant plugins:
@@ -23,7 +28,10 @@ The content is divided into a few sections:
 - Git bash or equivalent editor
 
 ## Architecture Stack
-Please refer the following diagram for the servers that is included in this project setup. There are five services to be set up:
+The diagram below outlines the server components included in this project setup. The configuration involves setting up five distinct services:
+
+
+
 - Nginx: A reverse proxy server
 - Tomcat: Java web application backend server
 - Memcache: Database caching service
@@ -32,7 +40,9 @@ Please refer the following diagram for the servers that is included in this proj
 
 ![Architecture Stack](images/architecture-stack.png)
 
-The Java application is a simple login website deployed on Tomcat. The user and password are stored in MySQL database for authentication and will be stored in a memcache caching service for fast next time retrieving. The Java web application source code structure is located in [src](src) directory
+
+The Java application, a simple login website deployed on Tomcat, authenticates users by checking against user credentials stored in the MySQL database. For swift retrieval, user information is also cached in a memcache caching service. The source code structure of the Java web application is located in the [src](src) directory.
+
 ## Manual Provisioning
 Please refer to [README.md](vagrant/manual/README.md) for detailed steps.
 
